@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #141313;
+  color: #111010;
+}
+header {
+  background: #2d2d2d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background: #0077cc;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+button:hover {
+  background: #005fa3;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #2d2d2d;
+  color: white;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  form input, form textarea {
+    width: calc(100% - 16px);
+  }
+}
+
+card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.card h3 {
+  margin-top: 0;
+  color: #0077cc;
+} 
+.card p {
+  line-height: 1.6;
+}
+.card a {
+  color: #0077cc;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+.card .button {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0077cc;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.card .button:hover {
+  background: #005fa3;
+}
+.card .button:active {
+  background: #004d80;
+}
+.card .button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.5);
+}
+.card .button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+.card .button:disabled:hover {
+  background: #cccccc;
+}
+.card .button:disabled:active {
+  background: #cccccc;
+}
+.card .button:disabled:focus {
+  box-shadow: none;
+}
+.card .button:focus-visible {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
+}
+.card .button:focus:not(:focus-visible) {
+  outline: none;
+}
+.card .button:focus-visible:hover {
+  background: #005fa3;
+}
+.card .button:focus-visible:active {
+  background: #004d80;
+}
+.card .button:focus-visible:disabled {
+  background: #cccccc;
+}
+.card .button:focus-visible:disabled:hover {
+  background: #cccccc;
+}
+.card .button:focus-visible:disabled:active {
+  background: #cccccc;
+}
+.card .button:focus-visible:disabled:focus {
+  box-shadow: none;
+}
+.card .button:focus-visible:disabled:focus-visible {
+  outline: none;
+}
+.card .button:focus-visible:disabled:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode header {
+  background: #1f1f1f;
+}
+.dark-mode nav ul {
+  background: #333;
+} 
+.dark-mode nav ul li a {
+  color: #ffffff;
+}
+.dark-mode section {
+  background: #1f1f1f;
+}
+.dark-mode .card {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+.dark-mode footer {
+  background: #1f1f1f;
+}
+.dark-mode button {
+  background: #0077cc;
+  color: white;
+}
+.dark-mode button:hover {
+  background: #005fa3;
+}
+.dark-mode form input,
+.dark-mode form textarea {  
+  background: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+.dark-mode form input:focus,
+.dark-mode form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+.dark-mode .card h3 {
+  color: #0077cc;
+}
+.dark-mode .card a {
+  color: #0077cc;
+}
+.dark-mode .card a:hover {
+  text-decoration: underline;
+}
+.dark-mode .card .button {
+  background: #0077cc;
+  color: white;
+}
+.dark-mode .card .button:hover {
+  background: #005fa3;
+}
+.dark-mode .card .button:active {
+  background: #004d80;
+}
+.dark-mode .card .button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+.dark-mode .card .button:disabled:hover {
+  background: #555;
+}
+.dark-mode .card .button:disabled:active {
+  background: #555;
+}
+.dark-mode .card .button:disabled:focus {
+  box-shadow: none;
+}
+.dark-mode .card .button:focus-visible {
+  outline: 2px solid #0077cc;
+  outline-offset: 2px;
+}
+.dark-mode .card .button:focus:not(:focus-visible) {
+  outline: none;
+}
+.dark-mode .card .button:focus-visible:hover {
+  background: #005fa3;
+}
+.dark-mode .card .button:focus-visible:active {
+  background: #004d80;
+}
+.dark-mode .card .button:focus-visible:disabled {
+  background: #555;
+}
+.dark-mode .card .button:focus-visible:disabled:hover {
+  background: #555;
+}
+.dark-mode .card .button:focus-visible:disabled:active {
+  background: #555;
+}
+.dark-mode .card .button:focus-visible:disabled:focus {
+  box-shadow: none;
+}
+
+.dark-mode .card .button:focus-visible:disabled:focus-visible {
+  outline: none;
+}
+.dark-mode .card .button:focus-visible:disabled:focus:not(:focus-visible) {
+  outline: none;
+} 
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;

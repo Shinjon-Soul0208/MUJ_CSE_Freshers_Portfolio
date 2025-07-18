@@ -1,0 +1,111 @@
+header {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #383636;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #1e67af;
+}
+
+header p {
+  font-style: italic;
+  color: #e1dada;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #06090b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card {
+  background-color: #eaf1f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.portrait {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #e8e2e2;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #f6f3f3;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #0a0e12;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #090d11;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: #f0ecec;
+}
